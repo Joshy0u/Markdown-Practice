@@ -1,4 +1,4 @@
-##### Function Usage/Debugging
+# Function Usage/Debugging
 
 Quick documentation on how to start and debug `star-stream` for future reference.
 
@@ -9,7 +9,7 @@ Before running any commands, start the Azurite service:
 
 > Azurite start
 
-## Commands
+### Commands
 
 - `func start`
 - `python send_data.py`
@@ -18,10 +18,10 @@ Before running any commands, start the Azurite service:
 
 
 
-#### Mock Data Format
+## Mock Data Format
 
 
-## metrics
+### metrics
 
 **NOTE**: You can either write the mock code in *python file(send_data.py)* or in the *test-json file*.
 
@@ -56,7 +56,7 @@ This setup ensures that when you send metric data, the sensor will work as expec
 
 
 
-## session
+### session
 
 Unlike metrics, with session, you have 2 options at the moment to write up the mockup data, either start or stop. however that data when written must be mocked up in 1 bracket and cannot add multiple within it. Make sure you follow schema otherwise the function will yell at you. Use `models.py` for refernece
 
