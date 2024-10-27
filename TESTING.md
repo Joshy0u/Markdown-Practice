@@ -1,4 +1,4 @@
-### Function Usage/Debugging
+##### Function Usage/Debugging
 
 Quick documentation on how to start and debug `star-stream` for future reference.
 
@@ -12,11 +12,14 @@ Before running any commands, start the Azurite service:
 ## Commands
 
 - `func start`
-- `send_data.py`
+- `python send_data.py`
 
 ---
 
-### Mock Data Format
+
+
+#### Mock Data Format
+
 
 ## metrics
 
@@ -47,13 +50,15 @@ Session data is not in a list, thereofre only one of each can be sent, no commas
 - **driver**: Enter a descriptive value (optional).
 - **metadata**: Add additional details as needed.
 
-This setup ensures that when you send metric data, the sensor will work as expected.
+This setup ensures that when you send metric data, the sensor will work as expected. Also for reference ive already created testing sensors 1 2 and 3. 
 
 **TO SEARCH FOR DATA**: Make sure in the "Order by" field, you use `"time DESC"` so that data is sorted by the most recent timestamp.
 
+
+
 ## session
 
-Unlike metrics, with session, you have 2 options at the moment to write up the mockup data, either start or stop. however that data when written must be mocked up in 1 bracket and cannot add multiple within it. Make sure you follow schema otherwise the function will yell at you. 
+Unlike metrics, with session, you have 2 options at the moment to write up the mockup data, either start or stop. however that data when written must be mocked up in 1 bracket and cannot add multiple within it. Make sure you follow schema otherwise the function will yell at you. Use `models.py` for refernece
 
 ```json
 {
@@ -67,3 +72,11 @@ Unlike metrics, with session, you have 2 options at the moment to write up the m
     }
 
 }
+```
+
+After all of this is done, you can send the data in your terminal using `python send_data.py` and it should be present in your 
+func start, then go check your database visualizer (datagrip, DBeaver, etc...)
+
+## Debugging
+
+to debug, run the azurite service, and then when you need to, go to the run button, next to the arrow , hit the dropdown and select `python debugger debug using launch.json`, then `attach to python functions`
