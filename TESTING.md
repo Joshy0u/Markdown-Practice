@@ -5,11 +5,12 @@ Quick documentation on how to start and debug `star-stream` for future reference
 also for note, to view test data, datagrip or any SQL 
 database alternative is needed(ask a lead for the postgreSQL key)
 
-## NOTE: Extentions necessary for  the connection to work 
+## NOTE: Extensions necessary for the connection to work 
 
-[Azurite](https://marketplace.visualstudio.com/items?itemName=Azurite.azurite)
+<a href="https://marketplace.visualstudio.com/items?itemName=Azurite.azurite" target="_blank">Azurite</a>
 
-[AzureTools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack) 
+<a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack" target="_blank">AzureTools</a>
+
 
 Before running any commands, start the Azurite service:
 
